@@ -1,0 +1,523 @@
+:root {
+  --clr-bg: #5d7ca6;
+  --confirmed-flight: #3aa706;
+  --clr-title: #605dec;
+  --clr-scale-title: #14a1ce;
+}
+body {
+  background-color: #f7f6ff;
+}
+
+.sec-clr {
+  color: #605dec;
+}
+.ter-clr {
+  color: #7c8db0;
+}
+.bold {
+  font-weight: bold;
+}
+.sectionForm > h1 {
+  text-align: center;
+}
+
+.sectionForm input {
+  padding-right: 2em;
+}
+
+/* 
+#############
+## STEPPER ##
+#############
+*/
+@media screen and (min-width: 800px) {
+  .stepper_container {
+    padding-bottom: 3rem;
+  }
+}
+.button_steps {
+  display: flex;
+  justify-content: center;
+}
+.disable {
+  display: none;
+}
+/*
+####################
+## PASSENGER INFO ##
+####################
+*/
+
+.passengeForm {
+  display: flex;
+}
+
+.enviardatos {
+  border: 1px solid;
+  background: #5d7ca6;
+  font-size: medium;
+  font-weight: bolder;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  color: white;
+  margin-top: 10px;
+}
+
+.MuiPhoneNumber-flagButton {
+  width: 50px !important;
+}
+
+/* 
+#######################
+## ELECIÓN DE TARIFA ##
+#######################
+*/
+
+.rate-card {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+
+  height: 150px;
+}
+
+.rate-card span {
+  font-weight: bold;
+}
+.title {
+  align-self: center;
+}
+.title h2 {
+  transform: rotate(-90deg);
+}
+.rateChoicePage {
+  display: flex;
+}
+
+.rate-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-card {
+  background-color: #5d7ca6;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 710px) {
+  .rateChoicePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .btn-card {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .rates-choices {
+    flex-grow: 3;
+  }
+  .rate-card {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+
+    height: 150px;
+  }
+}
+
+/* 
+##############
+## MI VIAJE ##
+##############
+*/
+
+.my-trip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+
+.my-trip h2 {
+  margin: 1rem 0 2rem;
+}
+.my-trip h3 {
+  margin: 1rem 0;
+}
+.my-trip h4 {
+  margin: 1rem 0 0.6rem;
+}
+
+.date-flight {
+  font-weight: bold;
+}
+.schedule-box {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  background-color: var(--clr-bg);
+  margin-top: 0.8rem;
+}
+
+.arrival-schedule,
+.departure-schedule {
+  padding: 0.5rem 0.2rem;
+  border: 1px solid black;
+  width: 105px;
+  display: block;
+  /*   display: flex;
+  flex-flow: nowrap column; */
+  align-items: center;
+}
+.titleTrip_cities {
+  font-size: 1.4rem;
+}
+.titleTrip_container h4 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 
+######################
+## Itinerario final ##
+######################
+*/
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itinerary_container_end {
+  padding: 5rem 1rem 10rem;
+  min-height: 100vh;
+  background: #f7f6ff;
+}
+
+.info_container {
+  padding: 1rem 1rem 5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgb(151, 147, 147);
+  margin: 2rem 0;
+}
+.info_container img {
+  height: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .info_container {
+    max-width: 830px;
+    padding: 1rem 1.5rem 4rem;
+    margin: 2rem auto;
+  }
+}
+
+.subtitle_info_container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtitle_info_container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+
+  background-color: rgba(204, 204, 204, 0.671);
+  z-index: 2;
+}
+.flight_duration_container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.flight_duration {
+  background: rgba(204, 204, 204, 0.431);
+  padding: 0.5rem 0.5rem;
+  border-radius: 20px;
+}
+@media screen and (max-width: 750px) {
+  .flight_duration {
+    font-size: 0.6rem;
+  }
+}
+
+.flight_confirmed {
+  display: block;
+  margin: 1rem 0.75rem;
+  color: var(--confirmed-flight);
+  font-weight: bold;
+}
+.date_flight {
+  font-size: 0.7rem;
+}
+.date_flight p {
+  margin: 1rem 0 0 0;
+}
+.airline_info {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+.airline_info img {
+  margin-right: 1rem;
+}
+.segment_scale {
+  margin: 3rem 1rem;
+}
+.segment_scale p {
+  color: var(--clr-scale-title);
+  font-weight: bolder;
+}
+/* 
+
+####################################
+## PASAJEROS, ASIENTOS Y EQUIPAJE ##
+####################################
+*/
+
+.aditional_info_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.aditional_info {
+  margin: 1rem 0;
+  width: 40%;
+}
+.aditional_info span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.aditional_info p {
+  margin: 0;
+}
+.title_box_icon {
+  position: relative;
+}
+.icon_passenger {
+  position: absolute;
+  left: -22px;
+  top: 5px;
+
+  font-size: 1.2em;
+}
+.icon-color {
+  color: #3143e2;
+  margin-right: 5px;
+}
+@media screen and (max-width: 760px) {
+  .itinerary_container_end {
+    font-size: 0.8rem;
+  }
+  .aditional_info_container {
+    font-size: 0.7rem;
+  }
+  .cancelation_container p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* 
+
+######################
+## TU VIAJE INCLUYE ##
+######################
+*/
+.tripincludes p {
+  margin-top: 1rem;
+}
+
+/* 
+################################
+## INFORMACIÓN DE FACTURACIÓN ##
+################################
+*/
+
+.info_main_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.totalPrice {
+  display: block;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.bottom_line {
+  position: relative;
+  display: block;
+  padding: 0 0 1rem 0;
+}
+
+.bottom_line::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+
+  background-color: rgba(204, 204, 204, 0.671);
+  z-index: 2;
+}
+
+/* Botón itinerario */
+
+.btn-itinerary {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.arrow-left-icon {
+  display: inline-block;
+  margin-right: 3px;
+  padding-top: 3px;
+}
+.btn-itinerary:hover .arrow-left-icon {
+  transform: translateX(-50%);
+  transition: 350ms;
+}
+/* 
+####################
+## RESUMEN Y PAGO ##
+####################
+*/
+/* MÉTODO DE PAGO */
+
+.title_payment {
+  margin: 1rem 0 0 0;
+  color: #605dec;
+}
+.title_payment + p {
+  margin: 0 0 1.5rem 0;
+}
+.card_selection {
+  background-color: var(--clr-title);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 2px;
+  display: inline-block;
+  max-width: 150px;
+}
+.paymentElection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-info {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10px;
+
+  margin: 1rem 0 2rem;
+}
+
+/* PAGO FINAL */
+
+.paymentConfirmationContainer {
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .paymentConfirmation {
+    margin-top: 3rem;
+  }
+  .paymentConfirmationContainer {
+    margin-top: 5rem;
+    grid-template-columns: 70% 30%;
+  }
+  .finalCounting {
+    margin-right: 1rem;
+  }
+}
+.flight_resume {
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+.flight_resume_way {
+  display: flex;
+  justify-content: space-around;
+}
+
+.airline_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.airline_name p,
+.airline_name h4,
+.schedule_container p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.schedule_container p {
+  text-align: right;
+}
+.airline_name h4 {
+  font-size: 1rem;
+}
+
+.finalCounting {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: right;
+}
+.finalCounting button {
+  margin: 2rem 0;
+  background-color: #5d7ca6;
+  border-radius: 20px;
+  border: none;
+
+  padding: 0.7rem 1rem;
+}
+
+/* 
+#########################
+## ELECCIÓN DE ASIENTO ##
+#########################
+*/
+.boxMaker {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem 25rem;
+}
+.box {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+.available {
+  background-color: rgba(0, 128, 0, 0.329);
+}
+.btn-stepper {
+  padding: 1rem 2rem;
+}

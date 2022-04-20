@@ -1,0 +1,18 @@
+.actives {
+  border: solid 1px black;
+  border-radius: 80%;
+  background-color: var(--button-color);
+  font-weight: bolder;
+  color: white;
+  width: 350px;
+  height: 100px;
+  margin: 20px;
+  font-size: x-large;
+}
+
+.activeuser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

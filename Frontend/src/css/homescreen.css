@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+input {
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}
+
+.App-logo h2 {
+  font-size: 2.1em;
+  font-family: "Pacifico";
+}
+
+a:hover,
+button {
+  cursor: pointer;
+}
+
+.searchEnvironment {
+  padding: 3rem 0.5rem;
+}
+
+.searchFlight {
+  position: relative;
+  background-color: #023859;
+  padding: 3rem 2rem 1rem 2rem;
+  max-width: 1100px;
+  display: block;
+  margin-inline: auto;
+}
+@media screen and (max-width: 800px) {
+  .searchFlight {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 460px) {
+  .searchEnvironment {
+    padding: 10rem 3rem;
+  }
+}
+.searchInput {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.searchTabs {
+  position: absolute;
+  top: -2.9rem;
+  left: 0;
+}
+
+/* 
+##############
+## PESTAÑAS ##
+##############
+*/
+.tab {
+  border-radius: 0%;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: #5d7ca6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab-1 {
+  border-radius: 15px 0 0 0;
+}
+
+.tab-2 {
+  border-radius: 0 15px 0 0;
+}
+
+.active {
+  background-color: #023859;
+}
+/* 
+################
+## FORMULARIO ##
+################
+*/
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+.search-submit {
+  align-self: flex-end;
+}
+.btn {
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+/* 
+############
+## INPUTS ##
+############
+*/
+
+.datePicker {
+  background-color: white;
+  color: green;
+}
+
+#mui-10-label {
+  color: #023859;
+}
+.searchInput {
+  margin: 0.5rem 1rem;
+  width: 100%;
+  height: 2.5rem;
+  background-color: white;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .inputsFlight {
+    flex-wrap: wrap;
+  }
+  .searchInput {
+    width: 100%;
+  }
+  .inputDiv {
+    display: flex;
+    justify-content: center;
+  }
+}
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+
+.btn-search {
+  display: block;
+  margin: 1rem;
+  margin-left: auto;
+}
+
+.btnFlight {
+  border-radius: 20px;
+  display: block;
+  margin-inline: auto;
+}
+
+.hidden {
+  display: none;
+}
+.btn {
+  background: #5d7ca6 !important;
+  color: #eee !important;
+  padding: 1rem 1.5rem !important;
+  border: none;
+}
+.inputsFlight {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.inputDiv {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.faplane_icon {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.7rem;
+  color: gray;
+}
+/* 
+########################
+## TARJETAS DE VUELOS ##
+########################
+*/
+
+.resultCard {
+  position: relative;
+  font-size: 0.5rem;
+
+  padding: 2em 0em;
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 2em;
+
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(51, 51, 51, 0.437);
+}
+
+.btnFlight {
+  font-size: 1em;
+  text-decoration: none;
+  display: inline;
+  margin-top: 0.5rem;
+  padding: 0.7em 2em;
+  color: white;
+}
+.btnFlight:hover {
+  opacity: 0.8;
+}
+
+.left-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 1.5em 0 1.5rem;
+  flex-grow: 3;
+}
+
+.flightItem {
+  max-width: 800px;
+}
+
+.svg-container {
+  font-size: 1.2rem;
+  position: relative;
+  width: 3em;
+}
+
+.resultCard .scales-flight {
+  position: absolute;
+  bottom: -10px;
+  left: -15px;
+  font-size: 0.7em !important;
+}
+
+@media screen and (max-width: 550px) {
+  .left-card {
+    padding: 0 0 0 3rem;
+    font-size: 0.7rem;
+  }
+  .left-card:before,
+  .left-card:after {
+    width: 8%;
+  }
+}
+
+.separation_card {
+  justify-content: space-around;
+}
+
+.right-card {
+  flex-grow: 1;
+  border-left: 1px solid black;
+  text-align: center;
+}
+.right-card img {
+  margin-top: 0.2em;
+  height: 5em;
+}
+.right-card p {
+  margin-top: 0.75em;
+  font-size: 0.75em;
+  color: #444;
+}
+
+.right-card span {
+  font-size: 1.9em;
+  font-weight: bold;
+  color: #023859;
+}
+.card_airline_logo {
+  font-size: 1em;
+}
+span.card_airline_name {
+  font-size: 1em;
+}
+.fareOption {
+  font-size: 0.5em;
+}
+.timeFlight {
+  display: flex;
+  justify-content: space-between;
+  /* font-size: 1.3rem; */
+}
+.timeFlight span {
+  font-size: 1.5em;
+}
+.origin_destination {
+  display: flex;
+  justify-content: space-between;
+}
+.origin_destination p {
+  font-size: 1.5em;
+}
+.duration_listflights {
+  font-size: 1.3em;
+}
+.butterfly {
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+}
+.b-1 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.b-2 {
+  left: 20px;
+}
+
+/* 
+#################################
+## ADVANCED SEARCH FLIGHT INFO ##
+#################################
+*/
+
+.flight-info-container {
+  background-color: #5d7ca6;
+  max-width: 600px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .flight-info-container {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.items-flight-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.item-flight-info {
+  margin-right: 5px;
+  padding: 0.5rem;
+  color: rgb(255, 247, 247);
+}
+
+/* 
+##################
+## MEDIA QUERYS ##
+##################
+*/
+
+@media screen and (min-width: 550px) {
+  .resultCard {
+    font-size: 1rem;
+    padding: 2em 0rem;
+    /* max-width: 500px; */
+    margin-inline: auto;
+    margin-top: 2em;
+  }
+  .duration_listflights {
+    font-size: 1em;
+  }
+  span.card_airline_name {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .scales-flight {
+    display: block !important;
+    width: 200px !important;
+
+    margin: 0 auto !important;
+  }
+}

@@ -1,0 +1,29 @@
+#perfilusuario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ultimasreservas {
+  border: solid 1px black;
+  border-radius: 5%;
+  background-color: #5d7ca6;
+  font-weight: bolder;
+  color: white;
+  width: 350px;
+  height: 100px;
+  margin: 20px;
+  font-size: x-large;
+}
+.datosusuario {
+  border: solid 1px black;
+  border-radius:5%;
+  background-color: #5d7ca6;
+  font-weight: bolder;
+  color: white;
+  width: 350px;
+  height: 100px;
+  margin: 20px;
+  font-size: x-large;
+}

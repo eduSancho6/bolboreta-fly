@@ -1,0 +1,40 @@
+#getuser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+  text-align: center;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fotousuario {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.guardarcambios {
+  border: 1px solid;
+  background: var(--button-color);
+  font-size: medium;
+  font-weight: bolder;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  color: white;
+  margin-top: 20px;
+}
+.fotocontainer {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+#bio {
+  height: 90px;
+}
